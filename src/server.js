@@ -11,4 +11,4 @@ function initializeServer () {
   }
 }
 
-initializeServer()
+export { initializeServer }
