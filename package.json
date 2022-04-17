@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start-cannon": "sh src/bench.sh"
+    "start-cannon": "sh bench.sh"
   },
   "repository": {
     "type": "git",
