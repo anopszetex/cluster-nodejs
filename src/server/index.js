@@ -3,6 +3,7 @@ import { appendFile } from 'fs/promises'
 import { fileManager, serverConfig } from './config.js'
 
 const SIZE = { length: 1e3 }
+const TIMEOUT = 1e3
 const INTERNAL_ERROR = 1
 
 //* 0 -> 40
@@ -31,7 +32,7 @@ function startServer () {
 
   setTimeout(function mySetTimeOut () {
     process.exit(INTERNAL_ERROR)
-  }, 1e4)
+  }, TIMEOUT)
 }
 
 export { startServer }
